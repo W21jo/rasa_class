@@ -1,0 +1,361 @@
+version: "3.1"
+
+nlu:
+
+
+
+
+- lookup: PERSON
+  examples: |
+    - aafrae
+    - aasmae
+    - abad
+    - ...
+    - zoumourrouda
+    - zounnoun
+
+
+    
+- intent: greet
+  examples: |
+    - hey
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+#1
+- intent: apply_makeup 
+  examples: |
+    - How do I apply for Makeup?
+    - I want to know how do I apply for Makeup 
+    - How do I apply for makeup?
+    - Could you guide me on the process of applying for makeup?
+    - What steps should I take to submit a makeup application?
+    - Can you provide instructions on how to apply for makeup?
+    - In what manner can I formally request makeup for a missed event?
+    - Could you explain the proper protocol for applying for makeup?
+    - What actions do I need to take to request makeup for a missed opportunity?
+    - How can I formally apply for makeup in the given situation?
+    - What is the procedure for submitting a makeup application?
+    - What are the necessary steps to put forth a makeup request?
+#2
+- intent: computer_engineering_credits
+  examples: |
+    - How many credits I need to complete my computer engineering bachelor degree in AUM?
+    - How can I graduate computer engineering in AUM
+    -ce credits
+    -ce
+
+#3
+- intent: change_major
+  examples: |
+    - procedures for changing the major
+    - change my major
+    - can i change major if my credits is 76
+    -i want to know how can i change my major.
+
+#4
+- intent: how_to_register
+  examples: |
+    - I want to register more than 12 cards
+    - Can I add or withdraw a course during the add/drop period?
+#5
+- intent: aum_club
+  examples: |
+    - What are the clubs in?
+    - How can I register in the club?
+
+#6
+- intent: AUM_Tutoring_Center
+  examples: |
+    - AUM Tutoring Center
+    - support center 
+    - can I have support in Tutoring
+    - Tutoring
+    - Where is Tutoring Center
+    - how can i register in Tutoring Center
+#7
+- intent: check_schedule
+  examples: |
+
+    -How can i check my final exam schedule?
+    -Where may I view a schedule for my final exam?  
+    -How can I access my final exam schedule, and when will it be made available to students?
+    -How can I check my final exam schedule?
+    -To verify my final exam schedule, what steps should I take?
+    -How do I go about checking the details of my final exam schedule?
+    -Can you guide me on the process for checking my final exam schedule?
+    -What is the recommended method for confirming my final exam schedule?
+    -How can I access and review my final exam schedule?
+    -Could you provide instructions on how to check my final exam schedule?
+    -What steps do I need to follow to ensure I have the accurate information about my final exam schedule?
+    -Is there a specific platform or website where I can check my final exam schedule?
+    -How do I find and confirm the details of my final exam schedule?
+# #8
+- intent: miss_final
+
+  examples: |
+    - I want to know what to do if I miss the final exam?  
+    - miss exam 
+    - what can i do when missed final exam
+    -  What steps should be taken if the final exam is missed?
+    -  In the event of missing the final exam, what actions should be considered?
+    -  Could you provide guidance on what to do if I miss the final exam?
+    -  What are the recommended procedures for addressing a missed final exam?
+    -  If the final exam is missed, what steps should I follow to rectify the situation?
+    -  What measures can be taken if I happen to miss the final exam?
+    -  Could you outline the appropriate course of action for a missed final exam?
+    -  In case of a missed final exam, what are the recommended next steps?
+    -  What should be done if I am unable to attend the final exam?
+    -  Can you provide advice on how to handle the situation if I miss the final exam?
+
+# #9
+- intent: paperwork_makeup
+  examples: |
+    - Where can I submit the paperwork to apply for makeup? 
+    - Where can I submit the paperwork to apply for makeup?
+    - To apply for makeup, where is the designated location for submitting the required paperwork?
+    - Where should I go to submit the necessary paperwork for applying for makeup?
+    - For makeup application, where is the designated place to submit the required paperwork?
+    - Where can I deliver the paperwork needed to apply for makeup?
+    - To initiate a makeup request, where is the appropriate location to submit the required paperwork?
+    - Where is the submission point for paperwork related to applying for makeup?
+    - What is the specific location for submitting paperwork to apply for makeup?
+    - To apply for makeup, where do I need to submit the required paperwork?
+    - Where is the designated drop-off point for paperwork when applying for makeup?
+
+
+
+
+# #10
+- intent: bring_final
+  examples: |
+    - What should I bring for the final exam? 
+    - What should I bring for the final exam?
+    - Can you provide a list of items I need to bring for the final exam?
+    - What items are essential to bring for the upcoming final exam?
+    - Could you offer guidance on the necessary materials to bring for the final exam?
+    - What should be included in the items I bring for the final exam?
+    - Can you advise me on the essential things to bring for the final exam?
+    - What items are recommended for me to bring when taking the final exam?
+    - Could you outline the necessary supplies for the final exam that I should bring?
+    - Is there a checklist of items I need to bring for the final exam?
+    - Can you specify the required materials to bring with me for the final exam?
+
+ #11
+- intent: final_exam_location 
+
+  examples: |
+    - How do I find the final exam location? 
+    - location 
+    - How do I find the final exam location?
+    - Can you provide guidance on locating the final exam venue?
+    - What steps should I take to determine the final exam location?
+    - Could you offer advice on finding the specific venue for the final exam?
+    - How can I ascertain the final exam location?
+    - Can you provide instructions on locating the final exam venue?
+    - What is the recommended method for finding the final exam location?
+    - Could you outline the process for determining the final exam venue?
+    - Is there a specific way to find the location of the final exam?
+    - Can you specify the steps I should follow to find the final exam location?
+#12
+- intent: late_final 
+
+  examples: |
+    - Can I enter the final exam if I am late? 
+    - Can I enter the final exam if I am late?
+    - Is it permissible to join the final exam after it has started if I am running late?
+    - Will I be allowed to enter the final exam even if I arrive late?
+    - Can I still participate in the final exam if I am tardy?
+    - Is there a grace period for entering the final exam if I am running late?
+    - Will I face any consequences for entering the final exam late?
+    - Is there a policy on late entry for the final exam?
+    - Can I join the final exam after the scheduled start time if I am late?
+    - Are there any restrictions or guidelines regarding late entry to the final exam?
+    - What is the procedure for entering the final exam if I arrive late?
+
+
+#13
+- intent: satisfied_final
+  examples: |
+    - what do i do if i'm not satisfied from my final exam grade? 
+    - What do I do if I'm not satisfied with my final exam grade?
+    - Is there a process for addressing dissatisfaction with my final exam grade?
+    - What steps should I take if I'm unhappy with my final exam results?
+    - Could you guide me on what to do if I find my final exam grade unsatisfactory?
+    - If I'm not content with my final exam grade, what actions can I take?
+    - Is there a protocol for expressing dissatisfaction with my final exam results?
+    - How can I address concerns about my final exam grade if I'm not satisfied?
+    - Are there procedures in place for handling dissatisfaction with final exam grades?
+    - What recourse do I have if I'm dissatisfied with my final exam grade?
+    - Could you provide advice on what steps to take if I'm not happy with my final exam result?
+#14
+- intent: submit_appeal
+  examples: |
+    - How can I submit an appeal? 
+    - What is the procedure for submitting an appeal?
+    - Could you guide me through the process of appealing a decision?
+    - How do I go about formally submitting an appeal?
+    - Can you provide instructions on the appeal submission process?
+    - What steps should I take to initiate the appeal process?
+    - In what manner can I officially request an appeal?
+    - Could you explain the proper protocol for submitting an appeal?
+    - What actions do I need to take to appeal a decision?
+    - How can I formally challenge a decision through the appeal process?
+    - What are the necessary steps to put forth an official appeal?
+
+- intent: migration
+  examples: |
+   - How do I migrate to Rasa from IBM Watson?
+   - I want to migrate from Dialogflow.
+
+
+# - intent: repeat_shirt_size
+#   examples: |
+#     - what is my shirt size
+#     - tell me my shirt size
+#     - do you know my shirt size
+#     - repeat my shirt size
+# - intent: give_shirt_size
+#   examples: |
+#     - i want a [large](shirt_size) shirt
+#     - [medium](shirt_size) size
+#     - give me a [small](shirt_size) tshirt
+#     - [small](shirt_size)
+#     - [medium](shirt_size)
+#     - [large](shirt_size)
+#     - i'd prefer [medium](shirt_size) size
+#     - gimme gimme gimme [small](shirt_size) tshirt
+#     - give shirt size
+#     - i want a [large](shirt_size) shirt please
+#     - i want to give you my shirt
+#     - [large](shirt_size)
+
+# - intent: ask_me_anything
+#   examples: |
+#     - ask me anything
+#     - would you like to ask me something
+#     - feel free to ask me about things
+#     - want to ask me something?
+
+# - intent: repeat_name
+#   examples: |
+#     - what is my name 
+#     - tell me my name 
+
+# - intent: give_name
+#   examples: |
+#     - iam a [wadha](name) name
+#     - my name is [wadha](name)
+
+
+# - intent: ask_college_question
+#   examples: |
+#     - What factors should I consider when choosing a college?
+#     - Tell me about choosing the right college based on {{ factor_to_consider }}.
+
+
+# - regex: factor_to_consider
+#   examples: |
+#     - academic programs
+#     - campus environment
+#     - location
+#     - facilities
+ 
+
+
+# - intent: 
+#   examples: |
+#     - 
+#     - 
+# - intent: 
+#   examples: |
+#     - 
+#     - 
+# - intent: 
+#   examples: |
+#     - 
+#     - 
+# - intent: 
+#   examples: |
+#     - 
+#     - 
+- intent: ask_name
+  examples: |
+    - what is your name
+    - can you tell me your name
+    - what should I call you
+    - please tell me your name
+
+- intent: provide_name
+  examples: |
+    - my name is [John](name)
+    - you can call me [Alice](name)
+    - I am [Bob](name)
+    - call me [Charlie](name)             
