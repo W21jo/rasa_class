@@ -1,0 +1,101 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: change major 
+  steps:
+  - intent: change_major
+  - action: utter_change_major
+
+- rule: ask about makeup
+  steps:
+  - intent: apply_makeup
+  - action: utter_apply_makeup
+
+# - rule: ask_computer_credit
+#   steps:
+#   - intent: computer_engineering_credits
+#   - action: utter_computer_engineering_credits
+
+
+- rule: how to register
+  steps:  
+  - intent: how_to_register
+  - action: utter_how_to_register
+
+
+- rule: about aum club
+  steps:
+  - intent: aum_club
+  - action: utter_aum_club
+
+
+- rule: AUM Tutoring Center
+  steps:
+  - intent: AUM_Tutoring_Center
+  - action: utter_AUM_Tutoring_Center
+
+
+- rule : ask about final 1
+
+  steps:  
+  - intent : check_schedule
+  - action : utter_how_do_I_apply_for_final1
+
+- rule : ask about final 2
+
+  steps:  
+  - intent : miss_final
+  - action : utter_how_do_I_apply_for_final2
+
+
+- rule : ask about final 3
+
+  steps:  
+  - intent : paperwork_makeup
+  - action : utter_how_do_I_apply_for_final3
+
+- rule : ask about final 4
+
+  steps:  
+  - intent : bring_final
+  - action : utter_how_do_I_apply_for_final4
+
+- rule : ask about final 5
+
+  steps:  
+  - intent : final_exam_location 
+  - action : utter_how_do_I_apply_for_final5
+
+- rule : ask about final 6
+  steps:  
+  - intent : late_final 
+  - action : utter_how_do_I_apply_for_final6
+
+
+- rule: ask about final 2
+  steps:
+  - intent: satisfied_final
+  - action: utter_how_do_I_apply_for_final7 
+
+- rule: ask about final 
+  steps:
+  - intent: submit_appeal
+  - action: utter_how_do_I_apply_for_final8 
+
+- rule: computer eng 
+  steps:
+  - intent: computer_engineering_credits
+  - action: utter_computer_engineering_credits
+
