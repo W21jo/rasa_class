@@ -8,57 +8,47 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - apply_makeup 
-  - computer_engineering_credits
-  - change_major
-  - how_to_register
-  - aum_club
+  - apply_makeup  
+  - computer_engineering_credits 
+  - change_major 
+  - how_to_register 
+  - aum_club 
   - AUM_Tutoring_Center
-  - how_do_I_apply_for_final1
-  - how_do_I_apply_for_final2
-  - how_do_I_apply_for_final3
-  - how_do_I_apply_for_final4
-  - how_do_I_apply_for_final5
-  - how_do_I_apply_for_final6
-  - utter_how_do_I_apply_for_final7 
-  - how_do_I_apply_for_final8
-  - utter_watson_migration
-  - utter_dialogflow_migration
-  - utter_ask_migration_product
-  - utter_ask_shirt_size
-  - utter_remember
-  - utter_ask_name
-  
+  - how_do_I_apply_for_final1 
+  - how_do_I_apply_for_final2 
+  - how_do_I_apply_for_final3 
+  - how_do_I_apply_for_final4 
+  - how_do_I_apply_for_final5 
+  - how_do_I_apply_for_final6  
+  - how_do_I_apply_for_final7 
+  - saven_sessions
+  - ten_sessions
+  - medical_excuses
+  - aum_portal
+  - Absence_percentage
+  - dismisse_grade
+  # - Attendance_policy6
+  # - Attendance_policy7
+  # - Attendance_policy8
+  # - Attendance_policy9
+  # - Attendance_policy10
+  # - makeup_policy
+  # - makeup_policy1
+  # - makeup_policy2
+  # - makeup_policy3
+  # - makeup_policy4
+  # - makeup_policy5
+  # - makeup_policy6
+  # - makeup_policy7
+  # - makeup_policy8
 
 
 
 
-
-# entities:
-# - shirt_size
-# - name 
-# slots:
-#   shirt_size:
-#     type: text
-#     influence_conversation: true
-#     mappings:
-#     - type: from_entity
-#       entity: shirt_size
-
-
-
-slots:
-  name:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: name
 responses:
-  
   utter_greet:
-  - text: "Hey! how are you???"
- 
+  - text: "Hey! How are you?"
+
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -75,86 +65,116 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_apply_makeup: 
+  utter_apply_makeup:
   - text: "you apply for the Makeup Request by visiting AUM Portal —> Student Requests —> Makeup"
- 
+
+
   utter_computer_engineering_credits:
   - text: "You need to complete 128 credits to graduate computer engineering in AUM ng_credits"
-  
+
   utter_change_major:
-  - text: "You must pass between 24 and 75 credits in your major."
+  - text: "You must pass between 24 and 75 credits in your major"
+
 
   utter_how_to_register:
   - text: "You can register 18 credit if your GPA is more than 2.67 or more"
- 
- 
+
+
   utter_aum_club:
-  - text: "BAUM provides many clubs for students, including: art and design club, robotics club, and music club,You can register through the AUM portal >Aum club"
+  - text: "AUM provides many clubs for students, including: art and design club, robotics club, and music club,You can register through the AUM portal >Aum club"
 
   utter_AUM_Tutoring_Center:
-  - text: "AUM Tutoring Center is ready to provide you with the support you need to enhance your academic success ,you can register for a tutoring session by visiting AUM Portal -> AUM Tutoring Center,you can visit the AUM Tutoring Center in the College of Business Administration Building on the ground floor  "
- 
-  utter_how_do_I_apply_for_final1 : 
+  - text: "AUM Tutoring Center is ready to provide you with the support you need to enhance your academic success ,you can register for a tutoring session by visiting AUM Portal -> AUM Tutoring Center,you can visit the AUM Tutoring Center in the College of Business Administration Building on the ground floor"
 
-  - text: " you can check your Final Exam Schedule by visiting AUM Portal -> Student Links -> Final Assessments Schedule" 
- 
+  utter_how_do_I_apply_for_final1:
+  - text: "you can check your Final Exam Schedule by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
 
-  utter_how_do_I_apply_for_final2:  
+  utter_how_do_I_apply_for_final2:
+  - text: "you missed your final exam for any critical reason, you can apply for a makeup by visiting AUM Portal -> Student Requests -> Makeup" 
 
-  - text: " you missed your final exam for any critical reason, you can apply for a makeup by visiting AUM Portal -> Student Requests -> Makeup"  
+  utter_how_do_I_apply_for_final3:
+  - text: "you have to submit the complete set of paper work at the time of Makeup submission by visiting AUM Portal -> Student Links -> Final Assessments Schedule"
 
-
-  utter_how_do_I_apply_for_final3: 
-
-  - text: " you have to submit the complete set of paper work at the time of Makeup submission by visiting AUM Portal -> Student Links -> Final Assessments Schedule" 
-
-  utter_how_do_I_apply_for_final4: 
-
-  - text: "you must bring your ID for the final exam" 
+  utter_how_do_I_apply_for_final4:
+  - text: "you must bring your ID for the final exam"
 
 
-  utter_how_do_I_apply_for_final5: 
+  utter_how_do_I_apply_for_final5:
+  - text: "you cannot enter your Final Exam if you are late for 45 minutes or more" 
 
-  - text: " you can find your Final Exam location in your find exam schedule on Moodle by visiting AUM Portal ->Student Links -> Final Assessments Schedule"  
-  
-
-  utter_how_do_I_apply_for_final6: 
-
-  - text: " you cannot enter your Final Exam if you are late for 45 minutes or more" 
-
-  utter_how_do_I_apply_for_final7:
+  utter_how_do_I_apply_for_final6:
   - text: "you have 5 days to file grade appeal from the student affairs department"
 
 
-  utter_how_do_I_apply_for_final8:
-  - text: "You can apply by visiting Student Affairs or through the link"
+  utter_how_do_I_apply_for_final7:
+  - text: "You can apply by visiting Student Affairs or through the link" 
 
-  utter_watson_migration:
-  - text: "utter_watson_migration"
 
-  utter_dialogflow_migration:
-  - text: "utter_dialog_migration"
+  utter_saven_sessions:
+  - text: "the max number of absences for a class that has 7 sessions a week in Summer semester is 9"
 
-  utter_ask_migration_product:
-  - text: "utter_ask_migration"
-  utter_ask_shirt_size:
-  - text: "What is your shirt size?"
-  utter_remember:
-  - text: "Thanks. I'll remember that."
+  utter_ten_sessions:
+  - text: "the max number of absences for a class that has 10 sessions a week in Summer semester is 12"
 
-  utter_ask_name:
-  - text: "What is your name ?"
-actions:
-# - action_say_shirt_size
-# - utter_ask_shirt_size
-# - utter_goodbye
-# - utter_greet
-# - utter_happy
-# - action_say_name
-# - utter_remember
-# - action_say_name
-# - utter_ask_name
-- action_return_name
+  utter_medical_excuses:
+  - text: "Appeal must be submitted within 2 working days of the dismissal notification"
+
+  utter_aum_portal:
+  - text: " Appeal by visiting AUM Portal -> Student Requests -> Attendance Dismissal "
+
+
+  utter_Absence_percentage:
+  - text: " AUM provides students with an opportunity to achieve up to 5% of their total grade within each course for Attendance in the classes"
+
+  utter_dismisse_grade:
+  - text: " If you are dismissed from a course, your grade will be accorded as an 'AF' Attendance Fail "
+
+
+#   utter_Attendance_policy6:
+#   - text: "If you arrive within the first 15 minutes of the start of the class you will be considered late  "
+
+#   utter_Attendance_policy7:
+#   - text: " if you arrive after 15 minutes of the start of the class you will be considered absent  "
+
+#   utter_Attendance_policy8:
+#   - text: " if you leave the classroom for less than 15 minutes you will be considered late  "
+
+#   utter_Attendance_policy9:
+#   - text: "if you leave the classroom for more than 15 minutes you will be considered absent"  
+
+#   utter_Attendance_policy10:
+#   - text: "if you are late to class three times it will be counted as 1 absence "  
+
+#   utter_makeup_policy:
+#   - text: "to apply for a makeup request, the missed assessment must be graded 5% or more "  
+
+#   utter_makeup_policy1:
+#   - text: "the Makeup Request must be submitted within 5 working days of the missed assessment "  
+
+#   utter_makeup_policy2:
+#   - text: " the max allowed number of makeups is (two) per student per semester "
+
+#  utter_makeup_policy3:
+#   - text: " the last date to submit any makeup petition for any assessment missed during the semester is the end of teaching week (the week before the final exam)"  
+
+#  utter_makeup_policy4:
+#   - text: " makeups may be administered on Saturday"  
+
+#  utter_makeup_policy5:
+#   - text: "no Makeup for an already approved & scheduled exam regardless of the reason"  
+
+
+#  utter_makeup_policy6:
+#   - text: "your submitted medical document from a private institution must have Doc Signature, Institution Stamp and Health Licensing Department Stamp"  
+
+
+#  utter_makeup_policy7:
+#   - text: "your submitted medical document from a public institution must have Doc Signature and Institution Stamp"  
+
+#  utter_makeup_policy8:
+#   - text: "you apply for the Makeup Request by visiting AUM Portal -> Student Requests -> Makeup "  
+
+
 
 
 session_config:
